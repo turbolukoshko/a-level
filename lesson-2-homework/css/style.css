@@ -1,0 +1,96 @@
+h1 {
+  color: yellow;
+}
+
+/* Additionally: Level 2*/
+
+div {
+  background: #5d6161;
+  position: relative;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+div > div {
+  background: #859392;
+}
+
+div > div > div {
+  background: #8bbfbd;
+}
+
+div > div > div > div {
+  background: #85e8e4;
+}
+
+div > div > div > div > div {
+  background: #cbfdfb;
+}
+
+/* div {
+  width: 500px;
+  height: 100px;
+  background: slateblue;
+  border: 2px solid darkred;
+  position: relative;
+  box-sizing: border-box;
+}
+
+div div {
+  width: 480px;
+  height: 80px;
+  background: salmon;
+  top: 8px;
+  left: 8px;
+}
+
+div div div {
+  width: 460px;
+  height: 60px;
+  background: tan;
+}
+
+div div div div {
+  width: 440px;
+  height: 40px;
+  background:goldenrod;
+}
+
+div div div div div {
+  width: 420px;
+  height: 20px;
+  background: bisque;
+} */
+
+/* Additionally: Level 3*/
+
+ul {
+  list-style: none;
+}
+
+ul li:first-child a {
+  color: green;
+}
+
+ul li:nth-child(even) {
+  font-size: 16px;
+}
+
+ul li:nth-child(3n+1) {
+  background: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+li::before {
+  content: '-';
+  padding-right: 5px;
+  display: inline-block;
+}

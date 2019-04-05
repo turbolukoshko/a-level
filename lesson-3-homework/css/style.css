@@ -1,0 +1,228 @@
+h2 {
+  text-align: center;
+  border: 1px solid red;
+}
+
+/* The task 2 */
+
+ul {
+  padding: 0;
+  list-style: none;
+  width: 300px;
+}
+
+ul li:first-child {
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 2px solid gray;
+}
+
+ul li:last-child {
+  border-bottom: 1px solid gray;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+/* The task 4 */
+
+img {
+  width: 500px;
+}
+
+/* The task 5 */
+
+form {
+  max-width: 350px;
+  margin: 0 auto;
+  background: #87164b;
+  padding: 30px;
+  color: #fff;
+  font-family: monsera
+}
+
+fieldset {
+  border: none;
+  display: flex;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+label, input {
+  font-size: 1.1em;
+}
+
+input[type="text"], 
+input[type="password"] {
+  padding: 5px 0 5px 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  margin: 10px 0 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: aqua;
+  transition: all 1.5s;
+}
+
+input[type="text"]:focus {
+  border-color: inherit;
+  box-shadow: none;
+}
+
+input[type="submit"] {
+  margin: 30px auto 0;
+  padding: 10px;
+  background: linear-gradient(180deg, #f9b148, #f89a14);
+  cursor: pointer;
+}
+
+.check {
+  font-size: 14px;
+}
+
+/* The Task 6 */
+table {
+  color: #eaf3ff;
+  margin: 0 auto;
+}
+
+caption {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: black;
+}
+
+thead {
+  background-color: #456ba8;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d3d3d3;
+  color: #232323;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #43546d;
+}
+
+th {
+  font-size: 18px;
+}
+
+td:nth-child(1),
+td:nth-child(2) {
+  padding-left: 10px;
+}
+
+td:nth-child(3),
+td:nth-child(4) {
+  padding: 0 50px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  padding: 0 10px 0 50px;
+}
+
+/* The task 7 */
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  background: purple;
+  color: #eaf3ff;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: aqua;
+  transition: color 2s;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.list {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper ul li {
+  
+  padding: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  margin-bottom: 10px;
+  width: 960px;
+}
+
+.item {
+  margin: 5px;
+  background-color: aqua;
+}
+
+.item:hover {
+  transition: all 1s;
+  padding: 25px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.list-alter {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-alter {
+  background-color: royalblue;
+  text-align: center;
+}
+
+.item-alter:hover {
+  background-color: royalblue;
+  transition: all 7s;
+  width: 500px;
+  cursor: pointer;
+}
+
+.item-alter {
+  background-color: royalblue;
+  transition: all 1.5s;
+  cursor: pointer;
+}
+
+/* The task 8 */
+
+img:hover {
+  width: 450px;
+  transition: width 2s;
+}

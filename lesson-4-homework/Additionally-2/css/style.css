@@ -1,0 +1,123 @@
+/* Main Setting */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+
+/* Hidden buttons Hamburger */
+
+.menu__wrapper {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: #8BC34A;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.header .logo {
+  margin-left: 20px;
+  height: 60%;
+}
+
+.header p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Section technology */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.technology {
+  background: #212121;
+  min-width: 12%;
+  overflow: hidden;
+}
+
+.list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  margin: 5px;
+  padding: 5px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.item:hover::before {
+  content: '\2022';
+  display: inline-block;
+  margin-left: -5px;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  color: #ffffff;
+}
+
+.tech__img {
+  width: 40px;
+}
+
+.list:hover {
+  list-style: disc;
+  color: #ffffff;
+}
+
+.item:hover {
+  border-bottom: 2px dashed #ffffff;
+}
+
+/* Section content */
+
+.content {
+  width: 50%;
+  border: 1px solid #CFD8DC;
+  border-left: none;
+  box-shadow: 4px 4px 10px #757575;
+  padding: 15px;
+}
+
+.text {
+  padding: 5px;
+  transition: font-size 1s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text:hover {
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 320px) {
+  
+  /* Section Tutorials and code */
+  
+  .tutorials,
+  .code {
+    width: 100%;
+  }
+
+  /* Section flex and img */
+
+  .flex,
+  .wrapper__img {
+    flex-direction: row;
+    width: 50%;
+  }
+
+  /* Section with img */
+
+  .wrapper__img {
+    justify-content: flex-end;
+    padding: 10px 20px 0;
+  }
+
+  /* Section with code */
+
+  .code p {
+    width: 80%;
+    height: 50%;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+}

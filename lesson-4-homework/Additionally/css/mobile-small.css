@@ -1,0 +1,113 @@
+@media only screen and (max-width: 320px) {
+
+  /* Hidden Section Tutorials */
+
+  .tutorials {
+    display: none;
+  }
+
+  /* Section Flex */
+
+  .flex {
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  /* Section with img */
+
+  .wrapper__img {
+    width: 30%;
+    justify-content: flex-end;
+  }
+
+  /* Section with code */
+
+  .code {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .code {
+    visibility: hidden;
+    /* opacity: 0; */
+  }
+
+  /* .code:hover {
+    opacity: 1;
+    transition: opacity 1s;
+  } */
+
+  .code p {
+    width: 80%;
+    height: 50%;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+
+  /* Hidden block for animation */
+
+  .hide__block {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+  }
+
+  .hide__block:hover .code {
+    visibility: visible;
+    background: black;
+    transition: all 1.5s cubic-bezier(.63,.16,.23,.3);
+    /* opacity: 1; */
+  }
+
+  /* Hamburger Menu */
+
+  .menu__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+  }
+
+  .menu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+  }
+
+  .menu span {
+    display: block;
+    margin: 4px auto;
+    height: 4px;
+    background: black;
+  }
+
+  /* Hidden button JS */
+
+
+  .btn__js {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFEB3B;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+    left: 30%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .btn__js:hover {
+    background: #FBC02D;
+    transition: all 1.5s;
+  }
+}

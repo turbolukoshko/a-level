@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="css/tablet.css">
+  <link rel="stylesheet" media="only screen and (max-width: 425px)" href="css/mobile-large.css">
+  <link rel="stylesheet" media="only screen and (max-width: 375px)" href="css/mobile-medium.css">
+  <link rel="stylesheet" media="only screen and (max-width: 320px)" href="css/mobile-small.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <img class="nav__img" src="img/Git-Logo-Black.png" alt="logo">
+        <img class="nav__img" src="img/Docker-Logo.png" alt="logo">
+        <img class="nav__img" src="img/nodejs-logo-FBE122E377-seeklogo.com.png" alt="logo">
+      </nav>
+    </header>
+    <main class="main__content">
+      <section class="tutorials">
+        <h1 class="tutorials__title">Top Tutorials</h1>
+        <ul class="tutorials__list">
+          <li class="tutorials__item">HTML Tutorial</li>
+          <li class="tutorials__item">CSS Tutorial</li>
+          <li class="tutorials__item">JavaScript Tutorials</li>
+          <li class="tutorials__item">SQL Tutorials</li>
+          <li class="tutorials__item">Python Tutorials</li>
+          <li class="tutorials__item">PHP Tutorials</li>
+          <li class="tutorials__item">Bootstrap Tutorials</li>
+        </ul>
+      </section>
+      <section class="flex">
+        <ul class="flex__list">
+          <li class="flex__item">display</li>
+          <li class="flex__item">flex-flow</li>
+          <li class="flex__item">align-items</li>
+          <li class="flex__item">justify-content</li>
+        </ul>
+      </section>
+      <section class="wrapper__img">
+        <img class="img" src="img/Git-Icon-Black.png" alt="git">
+      </section>
+      <section class="code">
+        <p>
+          <code>
+              var hello = 'Hello world!'; <br>
+              var message; <br>
+              // скопировали значение <br>
+              message = hello; <br>
+              alert( hello ); // Hello world! <br>
+              alert( message ); // Hello world! <br>
+              var arr = new Array(2, 3); <br>
+              alert( arr[0] ); // 2, создан массив [2, 3], всё ок <br>
+              arr = new Array(2); // создаст массив [2] ? <br>
+              alert( arr[0] ); // undefined! у нас массив без элементов, длины 2 <br>
+        </code>
+      </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

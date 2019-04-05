@@ -1,0 +1,48 @@
+@media only screen and (max-width: 425px) {
+
+  /* Main */
+
+  .main__content {
+    flex-wrap: wrap;
+  }
+
+  /* Section Tutorials */
+
+  .tutorials {
+    width: 45%;
+  }
+  .tutorials .tutorials__title {
+    margin: 30px 0 20px 15px;
+  }
+  .tutorials .tutorials__item {
+    margin: 5px 25px;
+  }
+
+  /* Section Flex */
+
+  .flex {
+    width: 30%;
+  }
+  .flex .flex__list {
+    margin: 10px 15px;
+  }
+
+  /* Section with img */
+
+  .wrapper__img {
+    width: 25%;
+  }
+
+  /* Section with code */
+
+  .main__content .code {
+    width: 100%;
+  }
+
+  .code p {
+    width: 80%;
+    height: 50%;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+}
