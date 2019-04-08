@@ -22,13 +22,13 @@
 
   /* Section with code */
 
-  .code {
+  .inner__code {
     width: 100%;
     display: flex;
     align-items: center;
   }
 
-  .code {
+  .inner__code {
     visibility: hidden;
     /* opacity: 0; */
   }
@@ -38,7 +38,7 @@
     transition: opacity 1s;
   } */
 
-  .code p {
+  .inner__code p {
     width: 80%;
     height: 50%;
     overflow: scroll;
@@ -47,13 +47,13 @@
 
   /* Hidden block for animation */
 
-  .hide__block {
+  .code {
     display: flex;
     flex-direction: column;
     background: transparent;
   }
 
-  .hide__block:hover .code {
+  .code:hover .inner__code {
     visibility: visible;
     background: black;
     transition: all 1.5s cubic-bezier(.63,.16,.23,.3);

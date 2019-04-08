@@ -34,10 +34,10 @@
 
   /* Section with code */
 
-  .main__content .hide__block {
+  .code {
     width: 100%;
   }
-  .main__content .code p {
+  .inner__code p {
     display: flex;
     width: 80%;
     margin: 20px 0;

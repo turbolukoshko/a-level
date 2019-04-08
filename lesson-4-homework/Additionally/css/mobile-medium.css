@@ -31,7 +31,7 @@
     width: 100%;
   }
 
-  .code p {
+  .inner__code p {
     width: 80%;
     height: 50%;
     overflow: scroll;

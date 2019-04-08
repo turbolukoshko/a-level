@@ -123,7 +123,7 @@ p {
 
 /* Section with code */
 
-.hide__block {
+.code {
   display: flex;
   background: #000;
   color: #ffffff;
@@ -133,12 +133,12 @@ p {
   box-sizing: border-box;
 }
 
-.code {
+.inner__code {
   display: flex;
   width: 80%;
   justify-content: center;
 }
 
-.code p {
+.inner__code p {
   width: 80%;
 }
