@@ -1,0 +1,32 @@
+#form {
+  width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0097A7;
+}
+
+.login,
+.password {
+  margin: 15px;
+  font-size: 18px; 
+}
+
+input[type="text"] {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+input[type="password"] {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  border: 2px solid black;
+  padding: 5px 20px;
+  background: #FFC107;
+  font-size: 16px;
+}
