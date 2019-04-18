@@ -3,17 +3,17 @@ var a = prompt('Геометрические расчеты - Прямоугол
 var b = prompt('Геометрические расчеты - Прямоугольника. Введите значение для стороны Б', '0'); 
 // getting from user value for side B
 
-var parseIntSideA = parseInt(a); // prompt - string. For mathematical operation need to convert
-var parseIntSideB = parseInt(b); // to the type of number
+var parseSideA = parseFloat(a); // prompt - string. For mathematical operation need to convert
+var parseSideB = parseFloat(b); // to the type of number float
 
-var powForSideA = Math.pow(parseIntSideA, 2); // exponentiation side A 
-var powForSideB = Math.pow(parseIntSideB, 2); // exponentiation side B
+var powForSideA = Math.pow(parseSideA, 2); // exponentiation side A 
+var powForSideB = Math.pow(parseSideB, 2); // exponentiation side B
 
 var diagonalLength = Math.sqrt(powForSideA + powForSideB); // calc diagonal of a rectangle
 
-var perimeter = 2*(parseIntSideA + parseIntSideB); // calc perimeter of a rectangle
+var perimeter = 2*(parseSideA + parseSideB); // calc perimeter of a rectangle
 
-var area = parseIntSideA * parseIntSideB; // calc area of a rectangle
+var area = parseSideA * parseSideB; // calc area of a rectangle
 
 // insert result of diagonal in HTML
 document.getElementById("diagonal").innerHTML = diagonalLength.toFixed(2); 
