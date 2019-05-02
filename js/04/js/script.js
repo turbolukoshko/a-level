@@ -165,8 +165,10 @@ while(prompt('Enter anything') == null){}
 var sum = 0;
 var n = 11;
 var step = 3;
+var arr = [];
 
 for(var i = 1; i < n; i+=step) {
+  arr.push(i); 
   sum += i;
 }
 
