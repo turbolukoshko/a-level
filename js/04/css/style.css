@@ -1,0 +1,5 @@
+tr:first-child,
+td:first-child {
+  font-weight: bold;
+  background: lightgray;
+}
