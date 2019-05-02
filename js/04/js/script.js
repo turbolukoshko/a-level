@@ -118,7 +118,7 @@ var arrayFill = [];
 var fill;
 while(arrayFill){
   fill = prompt('Enter element for array', '');
-  if(fill || fill = ''){
+  if(fill || fill == ''){
     arrayFill.push(fill);
     alert(arrayFill);
   }else{
