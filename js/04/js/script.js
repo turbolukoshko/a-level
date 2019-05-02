@@ -285,21 +285,22 @@ console.log(arr);
 
 /* matrix to html table */
 
-var countElemOnAxis = 20;
 var arr = [];
-var table = '<table border="1">';
-
-for(var i = 0; i <= countElemOnAxis; i++ ){
+var table = `<table cellspacing="0" cellpadding="4" border="1">`
+for(i = 0; i <= 20; i++) {
   arr[i] = [];
-  table += `<tr>`;
-  for(var j = 0; j <= countElemOnAxis; j++){
+  table += `<tr align="center">`;
+  for(j = 0; j <= 20; j++) {
     arr[i][j] = i * j;
-    arr[i][0] = [i];
-    arr[0][j] = [j];
-    table += `<td>${arr[i][j]}</td>`;
+    arr[i][0] = i;
+    arr[0][j] = j;
+    arr[0][0] = '*';
+    table += `<td>${arr[i][j]}</td>`
   }
-  table += '</tr>'
+  table += `</tr>`;
 }
-table += '</table>';
+table += `</table>`;
+
+console.log(arr);
 
 document.write(table);
