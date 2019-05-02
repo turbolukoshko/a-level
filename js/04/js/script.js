@@ -158,12 +158,12 @@ alert('Количество иттераций - ' + count);
 
 /* empty loop */
 
-while(prompt('Enter anything') == null){}
+while(prompt('Enter anything for exit') == null){}
 
 /* progression sum */
 
 var sum = 0;
-var n = 11;
+var n = +prompt('Enter n for progression sum', '1');
 var step = 3;
 var arr = [];
 
@@ -178,7 +178,7 @@ alert(sum);
 
 var newArr = [];
 var sum = 0;
-var n = 100;
+var n = +prompt('Enter n for progression sum', '1');
 
 for(var i = 1; i < n; i+=3){
   newArr.push(i);
