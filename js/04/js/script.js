@@ -56,7 +56,7 @@ var body = {
       }
     ]
   }]
-}
+};
 
 alert(body.children[1].children[1].content);
 alert(body.children[0].children[3].attrs.id);
@@ -87,7 +87,7 @@ var person = {
   name: prompt('Enter person name'),
   surname: prompt('Enter person surname'),
   married: confirm('Is the person married?'),
-}
+};
 
 /* object links */
 
@@ -286,7 +286,7 @@ console.log(arr);
 /* matrix to html table */
 
 var arr = [];
-var table = `<table cellspacing="0" cellpadding="4" border="1">`
+var table = `<table cellspacing="0" cellpadding="4" border="1">`;
 for(i = 0; i <= 20; i++) {
   arr[i] = [];
   table += `<tr align="center">`;
@@ -295,7 +295,7 @@ for(i = 0; i <= 20; i++) {
     arr[i][0] = i;
     arr[0][j] = j;
     arr[0][0] = '*';
-    table += `<td>${arr[i][j]}</td>`
+    table += `<td>${arr[i][j]}</td>`;
   }
   table += `</tr>`;
 }
