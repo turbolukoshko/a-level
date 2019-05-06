@@ -168,21 +168,20 @@ for(var i in uniqueKeys) {
 }
 
 // build table
-
 var table = `<table cellspacing="4" border="0" cellpadding="8">`;
 table += `<tr>`;
 // creating a <th> form from an array with unique keys
 for(var key in uniqueKeys) {
   table += `<th bgcolor="#BDBDBD">${uniqueKeys[key]}</th>`;
 }
-// creating a <tr> form from an object with unique keys
+table += `</tr>`;
+// creating a <td> form from an object with unique keys
 for(var i in persons){
   if(i % 2 == 0){
     table += `<tr bgcolor="#B3E5FC" align="center">`;
   }else{
     table += `<tr bgcolor="#C5CAE9" align="center">`;
   }
-  
     for(var j in objUniqueKeys){
       // console.log(j);
       // console.log(persons[i]);
@@ -190,7 +189,7 @@ for(var i in persons){
       if(j in persons[i]){
         table += `<td>${persons[i][j]}</td>`;
       }else{
-        table += `<td></td>`;
+        table += `<td>-</td>`;
     }
   }
 }
