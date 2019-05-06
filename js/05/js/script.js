@@ -24,7 +24,7 @@ b.married  = false;
 c.growth = '182';
 c.weight = '70';
 
-// /* fields check */
+/* fields check */
 
 for(var key in a) {
   if((key != "name") && (key != "surname")){
@@ -116,7 +116,7 @@ console.log(deserialize);
 persons.push(deserialize);
 console.log(persons);
 
-// /* HTML */
+/* HTML */
 
 var table = `<table cellspacing="2" border="1" cellpadding="5">`;
 
@@ -129,8 +129,8 @@ for(var i in persons) {
 table += `</table>`;
 document.write(table);
 
-// /* HTML optional fields */
-// /* HTML tr color */
+/* HTML optional fields */
+/* HTML tr color */
 
 var table = `<table cellspacing="2" border="1" cellpadding="5">`;
 for(var i in persons){
