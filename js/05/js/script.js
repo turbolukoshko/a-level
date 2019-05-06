@@ -75,7 +75,7 @@ for(var i in persons) {
   console.log(persons[i].name + ' ' + persons[i].surname);
 }
 
-// // Method 2, but it will permanently remove unnecessary elements from the array
+// // Method 2. But, it will permanently remove unnecessary elements from the object.
 // for(var i in persons) {
 //   for(var j in persons[i]){
 //     if((j.indexOf('name') && j.indexOf('surname') === - 1)) {
