@@ -83,6 +83,10 @@ function sum3(a=0, b=0, c=0){
 
 /* intRandom */
 function intRandom(min, max){
+  if(max == undefined){
+    max = min;
+    min = 0;
+  }
   var result = Math.round(Math.random()*(max - min) + min);
   return result;
 }
@@ -105,11 +109,11 @@ function sum(){
 }
 
 var arr = {
-  "a": a("Hello"),
-  "cube": cube(),
-  "avg2": avg2(),
-  "sum3": sum3(),
-  "intRandom": intRandom(),
-  "greatAll": greetAll("Superman", "SpiderMan", "Captain Obvious"),
-  "sum": sum(),
+  "a": a,
+  "cube": cube,
+  "avg2": avg2,
+  "sum3": sum3,
+  "intRandom": intRandom,
+  "greatAll": greetAll,
+  "sum": sum,
 };
