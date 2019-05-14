@@ -21,6 +21,13 @@ for(var i = 0; i <= 9; i++){
       for(var c = 0; c < this.parentElement.children.length; c++){
         this.parentElement.children[c].style.backgroundColor = "cyan";
       }
+      // highlighting from the column
+      for(var p = 0; p <= 9; p++){
+        let tbody = this.parentElement.parentElement;
+        let tr = this.parentElement.parentElement.children[p];
+        let td = this.parentElement.parentElement.children[p].children[this.cellIndex];
+        td.style.backgroundColor = "cyan";
+      }
       // highlights element
       this.style.backgroundColor = "blue";
     };
@@ -28,6 +35,13 @@ for(var i = 0; i <= 9; i++){
       // removes highlighting from the row
       for(var c = 0; c < this.parentElement.children.length; c++){
         this.parentElement.children[c].style.backgroundColor = "";
+      }
+      // removes highlighting from the column
+      for(var p = 0; p <= 9; p++){
+        let tbody = this.parentElement.parentElement;
+        let tr = this.parentElement.parentElement.children[p];
+        let td = this.parentElement.parentElement.children[p].children[this.cellIndex];
+        td.style.backgroundColor = "";
       }
       // removes highlighting from an element 
        event.target.style.backgroundColor = "";
