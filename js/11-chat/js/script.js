@@ -22,10 +22,12 @@ btn.addEventListener('click', () => {
   jsonPost("http://students.a-level.com.ua:10012", {func: 'addMessage', nick: nick.value, message: message.value})
 });
 
-function getMessages(){
-  jsonPost("http://students.a-level.com.ua:10012", {func: "getMessages", messageId: 0})
+(function(){
+  setInterval(function(){
+    var nextMessageId = 0;
+    jsonPost("http://students.a-level.com.ua:10012", {func: "getMessages", nextMessageId})
   .then(res => {
-    for(let i = 0; i < res.data.length; i++){
+    for(let i = nextMessageId; i < res.data.length; i++){
       let container = document.createElement('div');
       container.className = 'container';
       let containerNick = document.createElement('h3');
@@ -40,7 +42,7 @@ function getMessages(){
       chatHistory.insertBefore(container, chatHistory.firstChild);
       console.log(res.data[i]);
     }
+    nextMessageId = res.nextMessageId;
   });
-}
-
-getMessages();
+  }, 3500);
+})();
