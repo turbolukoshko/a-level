@@ -24,25 +24,26 @@ btn.addEventListener('click', () => {
 
 (function(){
   setInterval(function(){
-    var nextMessageId = 0;
-    jsonPost("http://students.a-level.com.ua:10012", {func: "getMessages", nextMessageId})
-  .then(res => {
-    for(let i = nextMessageId; i < res.data.length; i++){
-      let container = document.createElement('div');
-      container.className = 'container';
-      let containerNick = document.createElement('h3');
-      containerNick.className = 'containerNick';
-      let containerMessage = document.createElement('p');
-      containerMessage.className = 'containerMessage';
-      containerNick.innerHTML = res.data[i].nick;
-      containerMessage.innerHTML = res.data[i].message;
-      container.appendChild(containerNick);
-      container.appendChild(containerMessage);
-      chatHistory.appendChild(container);
-      chatHistory.insertBefore(container, chatHistory.firstChild);
-      console.log(res.data[i]);
-    }
-    nextMessageId = res.nextMessageId;
-  });
-  }, 3500);
+    var messageId = 0;
+      jsonPost("http://students.a-level.com.ua:10012", {func: "getMessages", messageId})
+        .then(res => {
+          for(var mess of res.data){
+            let container = document.createElement('div');
+            container.className = 'container';
+            let containerNick = document.createElement('h3');
+            containerNick.className = 'containerNick';
+            let containerMessage = document.createElement('p');
+            containerMessage.className = 'containerMessage';
+            containerNick.innerHTML = mess.nick;
+            containerMessage.innerHTML = mess.message;
+            container.appendChild(containerNick);
+            container.appendChild(containerMessage);
+            chatHistory.appendChild(container);
+            chatHistory.insertBefore(container, chatHistory.firstChild);
+          }
+          messageId = res.nextMessageId;
+          console.log(messageId);
+        });
+    }, 3500
+  );
 })();
