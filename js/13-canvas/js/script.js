@@ -15,6 +15,7 @@ canvas.onmousemove = function(event){
   //   canvas.onclick(event);
   // }
   chooseMoveFigures[figure.value](event);
+  console.log(event);
 };
 
 function Drawable(){
@@ -51,7 +52,7 @@ class Circle extends Drawable{
 
   draw(){
     ctx.beginPath();
-    ctx.arc(this.coordinateX - 10, this.coordinateY - 10, this.number, 0, 2 * Math.PI, false);
+    ctx.arc(this.coordinateX, this.coordinateY, this.number, 0, 2 * Math.PI, false);
     ctx.fillStyle = this.color; // set color
     ctx.fill(); // fill figure
   }
@@ -70,7 +71,7 @@ class Square extends Drawable{
   }
   draw(){
     ctx.beginPath();
-    ctx.rect(this.coordinateX - 15, this.coordinateY - 15, this.number, this.number);
+    ctx.rect(this.coordinateX, this.coordinateY, this.number, this.number);
     ctx.fillStyle = this.color;
     ctx.fill();
   }
@@ -89,10 +90,10 @@ class Line extends Drawable{
 
   draw(){
     ctx.beginPath();
-    ctx.moveTo(this.coordinateX, this.coordinateY);
-    ctx.lineTo(100, 100);
     ctx.lineWidth = this.number;
     ctx.styleStroke = color.value;
+    ctx.moveTo(this.coordinateX, this.coordinateY);
+    ctx.lineTo(100, 100);
     ctx.stroke();
  }
 }

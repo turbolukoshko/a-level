@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <canvas id='canvas' width=400 height=400></canvas>
-    <label for="number">Specify brush size</label>
-    <input type="number" id="number" value="10">
-    <label for="color">Specify color</label>
-    <input type="color" id="color">
-    <select id="figure"></select>
+  <div class="wrapper">
+    <div class="canvas">
+      <canvas id='canvas' width=400 height=400></canvas>
+    </div>
+    <div class="tools">
+      <label for="number">Specify brush size</label>
+      <input type="number" id="number" value="10">
+      <label for="color">Specify color</label>
+      <input type="color" id="color">
+      <label for="figure">Specify figure</label>
+      <select id="figure"></select>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 5px;
+}
+
+#canvas {
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.tools {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+label {
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+#number,
+#figure {
+  height: 26px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  background: #D1C4E9;
+  font-weight: bold;
+}
+
+#number:focus {
+  padding-left: 10px;
+  outline: none;
+}
+
+#color {
+  border: none;
+  height: 30px;
+  width: 50px;
+}
