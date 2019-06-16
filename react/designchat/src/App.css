@@ -1,0 +1,96 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #181818;
+  height: 100vh;
+  color: #e5e8df;
+}
+
+.header {
+  display: flex;
+  margin: 10px 0;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.header h3 {
+  margin: 0 0 0 15px;
+}
+
+.chat__forms {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nick,
+.message {
+  margin: 0 10px;
+  padding-left: 10px;
+  background: #181818;
+  color: #e5e8df;
+  border: none;
+  border-bottom: 1px solid #e5e8df;
+  height: 18px;
+  width: 180px;
+  font-size: 16px;
+}
+
+.nick:focus,
+.message:focus {
+  color: #e5e8df;
+  outline: none;
+}
+
+.send {
+  padding: 0;
+  background: #181818;
+  color: #FFEB3B;
+  border: 1px solid #FFEB3B;
+  width: 100px;
+  height: 29px;
+  font-size: 16px;
+  font-weight: 400;
+  vertical-align: top;
+  
+}
+
+.history__list {
+  padding: 0;
+}
+
+.history__title {
+  text-align: center;
+}
+
+.history__element {
+  padding: 10px 20px;
+  margin: 20px 0;
+  background: #5731d6;
+  color: #e5e8df;
+  border: 1px solid black;
+  border-radius: 80px;
+  list-style: none;
+}
+
+.history__nick,
+.history__message {
+  margin: 0;
+  padding: 0;
+}
+
+.history__nick {
+  font-size: 16px;
+}
+
+.history__message {
+  font-size: 14px;
+}
