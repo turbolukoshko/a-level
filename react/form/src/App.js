@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class FirstForm extends React.Component {
+class PasswordComparison extends React.Component {
   constructor(props){
     super(props);
 
@@ -19,6 +19,7 @@ class FirstForm extends React.Component {
         [name]: value
       }
     );
+    console.log(value);
   }
 
   handleSubmit(event){
@@ -61,7 +62,7 @@ class FirstForm extends React.Component {
 function App() {
   return (
     <div className="App">
-      <FirstForm/>
+      <PasswordComparison/>
     </div>
   );
 }
