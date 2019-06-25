@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input {
+  margin: 10px 10px;
+  padding-left: 10px;
+  height: 18px;
+  width: 180px;
+  font-size: 16px;
+}
+
+input[type="submit"]{
+  color: white;
+  background: #1976D2;
+  font-weight: bold;
+  height: 30px;
+  width: 180px;
+  border: none;
+}
